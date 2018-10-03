@@ -107,7 +107,7 @@ public class StayFitBootstrap implements ApplicationListener<ContextRefreshedEve
 
         FitnessCenter indranagar = new FitnessCenter();
         indranagar.setName("Indranagar");
-        indranagar.setAddress("100 Feet Road, Indranaga");
+        indranagar.setAddress("100 Feet Road, Indranagar");
         indranagar.setLocation("Bangalore");
         fitnessCenterRepository.save(indranagar);
 
@@ -123,7 +123,7 @@ public class StayFitBootstrap implements ApplicationListener<ContextRefreshedEve
         userRepository.save(guru);
 
         Trainer alan = new Trainer();
-        alan.setName("Alan");
+        alan.setName("Aryan Sarkar");
         alan.setDob(new Date());
         alan.setDoj(new Date());
         alan.setFitnessCenter(frazerTown);
@@ -136,7 +136,7 @@ public class StayFitBootstrap implements ApplicationListener<ContextRefreshedEve
         userRepository.save(alan);
 
         Trainer rahul = new Trainer();
-        rahul.setName("Rahul");
+        rahul.setName("Rahul Towari");
         rahul.setDob(new Date());
         rahul.setDoj(new Date());
         rahul.setFitnessCenter(frazerTown);
@@ -149,7 +149,7 @@ public class StayFitBootstrap implements ApplicationListener<ContextRefreshedEve
         userRepository.save(rahul);
 
         Member arjun = new Member();
-        arjun.setName("Arjun");
+        arjun.setName("Arjun Wadhwa");
         arjun.setDob(new Date());
         arjun.setGoal(weightGain);
         arjun.setFitnessCenter(frazerTown);
@@ -157,8 +157,8 @@ public class StayFitBootstrap implements ApplicationListener<ContextRefreshedEve
         arjun.setHeadTrainer(guru);
         arjun.setFitnessCenter(frazerTown);
         arjun.setRole(generalRole);
-        arjun.setPassword("$2a$08$dwYz8O.qtUXboGosJFsS4u19LHKW7aCQ0LXXuNlRfjjGKwj5NfKSe");
-        arjun.setEmail("arjun@example.com");
+        arjun.setPassword("13bcb0062");
+        arjun.setEmail("arjunw7@gmail.com");
         arjun.setGender("Male");
         Membership membership = new Membership();
         membership.setStartDate(new Date(-10));
@@ -204,11 +204,11 @@ public class StayFitBootstrap implements ApplicationListener<ContextRefreshedEve
 
         FrontdeskAdmin frontdeskAdmin = new FrontdeskAdmin();
         frontdeskAdmin.setFitnessCenter(frazerTown);
-        frontdeskAdmin.setName("Madar Fuchaa");
+        frontdeskAdmin.setName("Madhuri Awasthi");
         frontdeskAdmin.setRole(generalRole);
         frontdeskAdmin.setPassword("$2a$08$dwYz8O.qtUXboGosJFsS4u19LHKW7aCQ0LXXuNlRfjjGKwj5NfKSe");
         frontdeskAdmin.setEmail("frontdeskAdmin@example.com");
-        frontdeskAdmin.setGender("Male");
+        frontdeskAdmin.setGender("Female");
         frontdeskAdmin.setDesignation("FrontDeskAdmin");
 
         frontdeskAdminRepository.save(frontdeskAdmin);
